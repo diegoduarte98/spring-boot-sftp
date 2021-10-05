@@ -18,11 +18,11 @@ public class TestSftpFileTransfer implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         logger.info("Start download file");
-        boolean isDownloaded = fileTransferService.downloadFile("/home/diego/readme.txt", "/home/diego/readme.txt");
+        boolean isDownloaded = fileTransferService.downloadFile("/home/diego/readme.txt", "/upload/readme.txt");
         logger.info("Download result: " + String.valueOf(isDownloaded));
 
         logger.info("Start upload file");
-        boolean isUploaded = fileTransferService.uploadFile("/home/diego/vai.txt", "/home/diego/vai.txt");
+        boolean isUploaded = fileTransferService.uploadFile("/home/diego/readme.txt", "/upload/vai.txt");
         logger.info("Upload result: " + String.valueOf(isUploaded));
     }
 }
