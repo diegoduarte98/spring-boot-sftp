@@ -1,0 +1,7 @@
+sftp:
+  host: ${HOST}
+  port: 22
+  username: ${USER}
+  password: ${PASSWORD}
+  sessionTimeout: 15000
+  channelTimeout: 15000
