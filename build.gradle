@@ -14,6 +14,8 @@ repositories {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter'
+	implementation 'io.awspring.cloud:spring-cloud-starter-aws'
+	implementation 'io.awspring.cloud:spring-cloud-aws-messaging'
 	implementation 'com.jcraft:jsch:0.1.55'
 
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
@@ -22,3 +24,10 @@ dependencies {
 test {
 	useJUnitPlatform()
 }
+
+dependencyManagement {
+	imports {
+		mavenBom "io.awspring.cloud:spring-cloud-aws-dependencies:2.3.0"
+	}
+}
+

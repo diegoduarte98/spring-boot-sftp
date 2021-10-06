@@ -1,3 +1,7 @@
+spring:
+  main:
+    allow-bean-definition-overriding: true
+
 sftp:
   host: localhost
   port: 2222
@@ -5,3 +9,15 @@ sftp:
   password: pass
   sessionTimeout: 15000
   channelTimeout: 15000
+
+cloud:
+  aws:
+    region:
+      static: sa-east-1
+    stack:
+      auto: false
+    credentials:
+      access-key: admin
+      secret-key: admin
+    queue:
+      pocsftp: http://localhost:9324/queue/pocsftp

@@ -7,10 +7,10 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
 
-@Component
-public class TestSftpFileTransfer implements CommandLineRunner {
-
-    private final Logger logger = LoggerFactory.getLogger(TestSftpFileTransfer.class);
+//@Component
+//public class TestSftpFileTransfer implements CommandLineRunner {
+//
+    /*private final Logger logger = LoggerFactory.getLogger(TestSftpFileTransfer.class);
 
     @Autowired
     private FileTransferService fileTransferService;
@@ -24,5 +24,5 @@ public class TestSftpFileTransfer implements CommandLineRunner {
         logger.info("Start upload file");
         boolean isUploaded = fileTransferService.uploadFile("/home/diego/readme.txt", "/upload/vai.txt");
         logger.info("Upload result: " + String.valueOf(isUploaded));
-    }
-}
+    }*/
+//}
